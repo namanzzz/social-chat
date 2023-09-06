@@ -19,6 +19,7 @@
 *{
     padding: 0%;
     margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .formContainer {
@@ -111,7 +112,7 @@
         display: flex;
         overflow: hidden;
 
-        @include tablet {
+        @include mobile {
             width: 90%;
         }
 
@@ -119,7 +120,7 @@
             flex: 1;
             background-color: #3e3c61;
             position: relative;
-
+            max-width: 300px;
             .navbar {
                 display: flex;
                 align-items: center;
@@ -132,7 +133,7 @@
                 .logo {
                     font-weight: bold;
 
-                    @include tablet {
+                    @include mobile {
                         display: none;
                     }
                 }
@@ -142,28 +143,31 @@
                     gap: 10px;
 
                     img {
+                        
                         background-color: #ddddf7;
                         height: 24px;
                         width: 24px;
                         border-radius: 50%;
                         object-fit: cover;
-                        margin-left: 10px;
                     }
 
                     button {
                         background-color: #5d5b8d;
                         color: #ddddf7;
-                        font-size: 10px;
+                        font-size: 12px;
+                        padding: 8px 12px;
                         border: none;
-                        padding: 2px 6px;
+                        border-radius: 3px;
                         cursor: pointer;
-                        
 
-                        @include tablet {
+                        @include mobile {
                             position: absolute;
                             bottom: 10px;
                         }
                     }
+                }
+                .user button:hover{
+                    background-color: #2548be;
                 }
             }
 
@@ -338,12 +342,11 @@
                         background-color: #8da4f1;
                         cursor: pointer;
                     }
-                   
                 }
+
                 .send button:hover{
-                            background-color: rgb(80, 80, 187);
-                            
-                     }
+                    background-color: #2548be;
+                }
             }
         }
     }
