@@ -1,1 +1,3 @@
-# social-chat
+# socialChat
+
+#### A Firebase chat Application 
